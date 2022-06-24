@@ -8,13 +8,12 @@
 </head>
 <body>
 
-
-//importacion de Header de php
 <?php
     include './header.php'
 ?>
     <h1>Learn de PHP</h1>
     <h2>Encontrar el archivo</h2>
+    <h3>Prueba de Commit</h3>
 <?php
 //importar scripss
 
@@ -40,7 +39,6 @@ $movies = [
     ["nombre" => "Spiderman",
     "genero" => "Aventuras"]
 ];
-
 //Suma de Arrays
 echo"Que bueno";
 $array = [1,2,3,4];
@@ -61,8 +59,6 @@ $personas = [
     ['nombre' => 'Manolo','edad' => 44],
     ['nombre' => 'Pascual','edad' => 71]
 ];
-
-
 print "<table>
           <thead>
               <th>Nombre</th>
@@ -76,7 +72,7 @@ print "<table>
           </tbody>";
 
 $edadMedia = edadMedia($personas);
-
+//Pruebas
 $persona -> nombre = $nombre;
 $persona -> apellidos = $apellidos;
 
@@ -96,7 +92,6 @@ $square = function (int $number) : int {
 };
 //Arrow function
 //Pueden usarse variables creadas fuera
-
 $number = 10;
 $squareArrow = fn() => $number * $number;
 
@@ -120,7 +115,6 @@ function createTable(Array $movies) {
            </tbody> "; 
         } 
     }
- 
 }
 //--Servir Contenido PHP-----//
 
