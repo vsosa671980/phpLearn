@@ -1,0 +1,17 @@
+{
+    "name": "vicentesosa/learn",
+    "autoload": {
+        "psr-4": {
+            "Vicentesosa\\Learn\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vicente Sosa",
+            "email": "vsosaal@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
