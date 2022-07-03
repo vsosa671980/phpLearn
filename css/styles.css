@@ -1,0 +1,30 @@
+nav{
+    background-color: aqua;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+table{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+}
+
+tr{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+ tbody :nth-child(2n ){
+    background-color: red;
+ }
+
+ tbody :nth-child(2n -1){
+    background-color: aquamarine;
+ }

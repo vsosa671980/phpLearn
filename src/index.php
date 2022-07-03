@@ -17,10 +17,14 @@
 <?php
  //Arrays PHP
 
+ $casas = ["grande","pequeña","enorme"];
+
+
 
 
  //Arrays Asociativos
 
+ 
 
 
  //Funciones PHP
