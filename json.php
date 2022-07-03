@@ -5,6 +5,12 @@
 <?php
 //Hay que hacerlo antes de hacer el primer Json
 header('Content-type: application/json');
+
+//CORS
+
+header('Acces-Control-Aloow-Origin: *');
+header(("Acces-Control-Aloow-Headers:"));
+header(("Acces-Control-Aloow-Methods:"));
  //Generamos un Array
  $people = [
 
@@ -18,8 +24,8 @@ header('Content-type: application/json');
  $json = json_encode($people);
  //Para generar Json de un Array
   echo json_encode($people);
-json_decode($json);
-var_dump($json);
+  json_decode($json);
+  var_dump($json);
 
 
 
