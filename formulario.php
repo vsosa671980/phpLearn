@@ -14,12 +14,15 @@
 
 <h1>Formulario</h1>
 
-  <form action="./peticiones.php" method="post">
+  <form action="inserciones.php" method="post">
     <label for="">Nombre</label>
     <input type=text id="nombre" name="nombre">
 
     <label for="apellidos">Apellidos</label>
     <input type=text id="apellidos" name="apellidos">
+
+    <label for="telefono">Telefono</label>
+    <input type=text id="telefono" name="telefono">
 
     <input type="submit">
 

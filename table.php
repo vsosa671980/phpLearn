@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Table</title>
 </head>
+
 <body>
 
 
-<?php
-   require_once ('./menu.php');
-?>
+    <?php
+    require_once('./menu.php');
+    require_once('./select.php');
+    ?>
 
-  <h1>Esto es la tabla de los usuarios</h1>
+    <h1>Esto es la tabla de los usuarios</h1>
 
-  <?php
+    <?php
 
     //Cremos una array de nombres de personas con un array asociativo
     $personas = [
@@ -51,17 +54,19 @@
 
             <!-- Recorremos el array Asociativo -->
             <?php
-            foreach ($personas as $value) {
-                
+            foreach ($results as $value) {
+
                 print "<tr>";
+                print "<td>" . $value['id'] . "</td>";
                 print "<td>" . $value['nombre'] . "</td>";
-                print "<td>" . $value['edad'] . "</td>";
-                print "<td>" . $value['Altura'] . "</td>";
+                print "<td>" . $value['apellidos'] . "</td>";
+                print "<td><a href='delete.php?id=$value[id]'>Delete</a>";
                 print "</tr>";
             }
-            ?>
+            ?>s
         </tbody>
     </table>
     <script src="./javascript/main.js"></script>
 </body>
+
 </html>

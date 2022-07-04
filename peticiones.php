@@ -15,14 +15,8 @@
 <?php
    require_once ('./menu.php');
 ?>
-
-
     <h1>Peticiones de PHP</h1>
-
-
-
     <?php
-
     //Funcion para calcular el dia de la semana que es
     //Con este metodo sacamos el dia de la semana en ingles
     $dayOfWeek = date('l');
@@ -80,10 +74,7 @@
     print "$name";
     $apellidos = $_POST['apellidos'];
     print "$apellidos";
-   
- 
-    ?>
-
+       ?>
 
 </body>
 

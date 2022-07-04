@@ -21,10 +21,3 @@ tr{
     justify-content: space-around;
     padding: 10px;
 }
- tbody :nth-child(2n ){
-    background-color: red;
- }
-
- tbody :nth-child(2n -1){
-    background-color: aquamarine;
- }
